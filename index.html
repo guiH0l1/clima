@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquise a cidade" />
+        <span class="material-symbols-outlined location"> location_on </span>
+        <button class="material-symbols-outlined search">search</button>
+      </div>
+     <div class="temp-box">
+        <div class="weather-icon">
+          <img src="image/clear.webp " />
+        </div>
+        <div class="current-temp">
+          <div class="num">21</div>
+          <div class="derq">°C</div>
+        </div>
+        <div class="description">Céu limpo</div>
+        <div class="location-response">
+          <span class="material-symbols-outlined location-response-icon">
+            location_on
+          </span>
+          <div class="location-response-name">São Paulo, BR</div>
+        </div>
+        <div class="weather-details">
+          <div class="item">
+            <span class="material-symbols-outlined icon">
+              humidity_percentage
+            </span>
+            <div>
+              <div class="value humidity">50%</div>
+              <p>Umidade</p>
+            </div>
+          </div>
+          <div class="item">
+            <span class="material-symbols-outlined icon"> air </span>
+            <div>
+              <div class="value wind-speed">2km/h</div>
+              <p>Velocidade dos ventos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="error-box">
+        <div class="error-icon">
+          <img src="image/error.webp" />
+        </div>
+        <div class="error-message">Não encontrado!</div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
